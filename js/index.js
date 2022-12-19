@@ -211,30 +211,31 @@ console.log(filtrar)
 
 // BUSCADOR DE PRODUCTOS
 const buscar = prompt(`que terapia esta buscando?
- Osteopatía 
- Kinesiología  
- Depilación definitiva 
- Drenaje linfático 
-  Masaje descontracturantes  
-  Masajes reductores  
-  Vela velvet  
-  Limpieza facial  
-  Terapia postural activa  
-  Reeducación postural global 
-  Yoga  
-  Punción seca  
-  Ventosas  
-  Rehabilitación ATM  
-  Tto Parálisis facial`)
+osteopatia 
+kinesiologia 
+tratamiento paralisis facial 
+rehabilitacion atm 
+puncion seca 
+yoga 
+reeducacion postural global 
+depilacion definitiva 
+ventosas 
+drenaje linfativo 
+masaje descontracturante 
+masajes reductores 
+vela velvet 
+limpieza facial 
+terapia postural activa`)
 console.log(buscar)
 
-function productobuscado(){
+function buscarproducto() {
 let productobuscado = newproductos.find( terapia => terapia.producto === buscar);
 alert(productobuscado.producto);
 alert(productobuscado.producto + productobuscado.id + productobuscado.descripcion + productobuscado.categoría + productobuscado.precio);
-
+console.table (productobuscado)
 }
-productobuscado()
+buscarproducto()
+
     
     
     
