@@ -232,7 +232,7 @@ function productobuscado(){
 let productobuscado = newproductos.find( terapia => terapia.producto === buscar);
 alert(productobuscado.producto);
 alert(productobuscado.producto + productobuscado.id + productobuscado.descripcion + productobuscado.categoría + productobuscado.precio);
-console.table(productobuscado)
+
 }
 productobuscado()
     
